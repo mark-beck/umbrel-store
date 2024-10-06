@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: big-bear-umbrel-chromium_server_1
+      APP_PORT: 4000
+
+  server:
+    # Service for running Chromium browser in a container
+    image: docker pull ghcr.io/mark-beck/egun:latest
+
+    # Set environment variables for the container
+    environment:
+     - SECRET_KEY_BASE: i2JPTr5zj/EN6Dsxqyn2ZIgZbYw/xI3w89OAE3RN30f+SPmfX1IhAopAq1GBAAyS
+
+    # Define the restart policy for the container
+    restart: unless-stopped

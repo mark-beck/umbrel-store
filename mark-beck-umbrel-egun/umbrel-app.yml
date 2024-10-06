@@ -1,0 +1,17 @@
+manifestVersion: 1
+id: mark-beck-umbrel-egun
+name: Bieter
+category: Finance
+version: "0.0.1"
+tagline: Egun.de Bietagent
+description: Egun.de Bietagent
+developer: Mark Beck
+dependencies: []
+repo: https://github.com/mark-beck/egun-bieter
+support: https://github.com/mark-beck/egun-bieter
+port: 4000
+gallery: []
+path: ""
+defaultPassword: ""
+submitter: Mark Beck
+submission:
