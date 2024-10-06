@@ -8,7 +8,7 @@ services:
 
   server:
     # Service for running Chromium browser in a container
-    image: docker pull ghcr.io/mark-beck/egun:latest
+    image: ghcr.io/mark-beck/egun:latest
 
     # Set environment variables for the container
     environment:
