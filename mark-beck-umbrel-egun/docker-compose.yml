@@ -1,16 +1,11 @@
 version: "3.7"
 
 services:
-  server:
-    # Service for running Chromium browser in a container
-    image: ghcr.io/mark-beck/egun:latest
-
+  egun:
+    image: localhost:5000/egun-bieter
+    restart: on-failure
+    stop_grace_period: 1m
     ports:
-    - 4000:4000
-
-    # Set environment variables for the container
+      - 4000:4000
     environment:
-    - SECRET_KEY_BASE: i2JPTr5zj/EN6Dsxqyn2ZIgZbYw/xI3w89OAE3RN30f+SPmfX1IhAopAq1GBAAyS
-
-    # Define the restart policy for the container
-    restart: unless-stopped
+      SECRET_KEY_BASE: m+yIxtaDJnRxxW31c063pZ1IdOBiW/3HyIyevE5LTfCI4asts7H8p9332bbO+Jrd
