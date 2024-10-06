@@ -3,7 +3,7 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: big-bear-umbrel-chromium_server_1
+      APP_HOST: mark-beck-egun_server_1
       APP_PORT: 4000
 
   server:
